@@ -46,6 +46,7 @@ body {
   margin: 10px;
   /*overflow: hidden;*/
   border: 1px solid #1F313C;
+  border-radius: 8px;
 }
 
 .guitarra ol {
@@ -83,6 +84,15 @@ body {
   padding: 20px;
 }
 
+button {
+  border-radius: 5px;
+  border: none;
+  background: #fd324e;
+  color: white;
+  padding: 7px;
+
+}
+
 .portada button {
   margin-bottom: 70px;
 }
@@ -107,4 +117,21 @@ body {
 .contenedor {
   width: 800px;
   margin: auto;
+}
+
+.footer {
+  background: #273b47;
+}
+
+.contacto img {
+  display: block;
+}
+
+.contacto strong {
+  display: block;
+}
+
+.contacto a {
+  color: white;
+  text-decoration: none;
 }
