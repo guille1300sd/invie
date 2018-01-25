@@ -1,22 +1,23 @@
-<!DOCTYPE html>
+<!DOCTYPE html> <!-- Nos indica que el documento es de HTML5-->
+
 <html lang="es">
   <head>
-    <title>Invie - Tus mejores guitarras!</title>
+    <title>Invie - Tus mejores guitarras!</title> <!-- Titulo que se muestra en la pestaña del navegador-->
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/invie.css">
-     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Allerta" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Allerta" rel="stylesheet">
   </head>
 
   <body>
     <header id="header" class="header contenedor">
       <figure class="logotipo"> <!-- Logotipo -->
-        <img src="images/invie.png" width="186" height="60" alt="invie logotipo">
+        <img src="images/invie.png" width="186" height="60" alt="invie logotipo"> <!-- alt=texto alternativo si no se muestra la imagen -->
       </figure>
       <nav class="menu"> <!-- Menu -->
-        <ul>
-          <li> <a href="index.html"> Home </a> </li>
-          <li> <a href="#guitarras"> Guitarras </a> </li>
-          <li> <a href="precios.html"> Precios </a> </li>
+        <ul> <!-- ul= unordered list/lista desordenada // li = list item /objeto de lista -->
+          <li> <a href="index.html"> Home </a> </li> <!-- a = ancle / enlace // nos sirve para crear enlaces-->
+          <li> <a href="#guitarras"> Guitarras </a> </li> <!--con el atributo href=#x nos siver para ir a un marcador dentro de la misma pagina con el mismo id-->
+          <li> <a href="precios.html"> Precios </a> </li> <!-- asi iremos a la pagina indicada en href -->
         </ul>
       </nav>
     </header>
@@ -25,7 +26,7 @@
       <div class="contenedor">
         <h1 class="titulo">Guitarras invisibles</h1>
         <h3 class="titulo-a">Se la estrella de rock que siempre quisiste ser</h3>
-        <button> Conoce mas </button>
+        <button class="button"> Conoce mas </button>
       </div>
     </section>
 
@@ -63,39 +64,40 @@
           <a href="mailto:contacto@invie.com"><strong>E-mail</strong> <span>contacto@invie.com</span></a>
         </div>
         <form class="formulario">
-          <label for="nombre">Nombre</label>
-          <input type="text" required name="nombre" id="nombre" placeholder="Texto que indica funcionamiento">
-          <label for="email">E-mail</label>
-          <input type="email" required name="email" id="email">
+          <div class="col1">
+            <label for="nombre">Nombre</label>
+            <input type="text" required name="nombre" id="nombre" placeholder="Texto que indica funcionamiento">
+            <label for="email">E-mail</label>
+            <input type="email" required name="email" id="email">
 
-          <div class="sexo">
-            <label for="mujer">
-              <input type="radio" id="mujer" name="sexo" value="mujer">Mujer
+            <div class="sexo">
+              <label for="mujer">
+                <input type="radio" id="mujer" name="sexo" value="mujer" checked>Mujer
+              </label>
+              <label for="hombre">
+                <input type="radio" id="hombre" name="sexo" value="hombre">Hombre
+              </label>
+            </div>
+
+            <div class="intereses">
+              <label for="cotizacion">
+              <input type="checkbox" name="intereses" id="cotizacion" value="cotizacion" checked> Cotizacion
             </label>
-            <label for="hombre">
-              <input type="radio" id="hombre" name="sexo" value="hombre">Hombre
+              <label for="reclamos">
+              <input type="checkbox" name="intereses" id="reclamos" value="reclamos"> Reclamos
             </label>
+              <label for="comentarios">
+              <input type="checkbox" name="intereses" id="comentarios" value="comentarios"> Comentarios
+            </label>
+              <label for="otros">
+              <input type="checkbox" name="intereses" id="otros" value="otros"> Otros
+            </label>
+            </div>
           </div>
-
-          <div class="intereses">
-            <labe for="cotizacion">
-            <input type="checkbox" name="intereses" id="cotizacion" value="cotizacion"> Cotizacion
-            </labe>
-            <labe for="reclamos">
-            <input type="checkbox" name="intereses" id="reclamos" value="reclamos"> Reclamos
-            </labe>
-            <labe for="comentarios">
-            <input type="checkbox" name="intereses" id="comentarios" value="comentarios"> Comentarios
-            </labe>
-            <labe for="otros">
-            <input type="checkbox" name="intereses" id="otros" value="otros"> Otros
-            </labe>
-          </div>
-
-          <div>
+          <div class="col2">
             <label for="comentarios"> Comentarios</label>
             <textarea name="comentarios" id="comentarios" rows="7" cols="30"></textarea>
-            <input type="submit" value="Enviar">
+            <input type="submit" value="Enviar" class="button">
           </div>
         </form>
       </div>
