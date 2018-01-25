@@ -1,4 +1,11 @@
 /*
+
+Modelo de caja css
+*En el centro tenemos es contenido
+*Despues viene el paddin (margen interno)
+*Despues el border (parte visible)
+*Despues el margin (mager externo)
+
 * {
   padding-top: 10px;
   padding-left: 3px;
@@ -12,7 +19,7 @@
 } */
 
 .titulo {
-  font-size: 70px;
+  font-size: 70px; /*Tamaño de fuente*/
   font-family: 'Montserrat', sans-serif;
   margin-bottom: 0;
   margin-top: 70px;
