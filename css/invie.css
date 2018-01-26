@@ -34,8 +34,49 @@ body {
   margin: 0;
 }
 
+input, textarea {
+  outline: 0;
+}
+
+input:focus, textarea:focus {
+  background: lightgrey;
+}
+
+table {
+  width: 100%;
+}
+
+th {
+  background: #273b47;
+  color: white;
+  padding: 10px 20px;
+  text-align: left;
+}
+
+td {
+  padding: 20px;
+}
+
+table, td, th {
+  border: 1px solid #273b47;
+  border-collapse: collapse;
+}
+
+
 .header {
   position: relative;
+}
+
+
+.contenedor {
+  width: 800px;
+  margin: auto;
+  position: relative;
+}
+
+.background {
+  background-image: url('../images/background.png');
+  background-size: cover;
 }
 
 .titulo-a {
@@ -45,6 +86,11 @@ body {
 
 .guitarras {
   color: #1F313C;
+  margin-bottom: 60px;
+}
+
+.guitarra.b {
+  height: 190px;
 }
 
 .guitarras h2 {
@@ -54,7 +100,7 @@ body {
 
 .guitarra {
   padding: 10px;
-  margin: 10px;
+  margin: 10px 10px 40px 10px;
   /*overflow: hidden;*/
   border: 1px solid #1F313C;
   border-radius: 8px;
@@ -70,6 +116,8 @@ body {
 
 .contenedor-guitarra-b {
   margin-left: 370px;
+  position: relative;
+  bottom: 90px;
 }
 
 .right {
@@ -80,9 +128,10 @@ body {
 
 .left {
   float: left;
-  top: 80px;
   position: relative;
 }
+
+
 
 .title-b {
   font-size: 50px;
@@ -90,17 +139,14 @@ body {
 }
 
 .portada {
-  background-image: url('../images/background.png');
   color: white;
   padding: 20px;
-  background-size: cover;
   height: 500px;
 }
 
 .button {
   border-radius: 12px;
   border: none;
-  background: #fd324e;
   color: white;
   padding: 7px 12px;
   cursor: pointer;
@@ -130,14 +176,9 @@ body {
   margin-left: 0;
 }
 
-
-.contenedor {
-  width: 800px;
-  margin: auto;
-}
-
 .footer {
   background: #273b47;
+  padding: 50px 10px 50px 10px;
 }
 
 .contacto img {
@@ -170,7 +211,6 @@ body {
   display: flex;
   width: 400px;
   color: white;
-  padding: 50px 10px 50px 10px;
 }
 
 .col1, .col2 {
@@ -186,6 +226,10 @@ body {
   align-items: flex-start;
 }
 
+.col2 .button {
+  margin-top: 15px;
+}
+
 .intereses label {
   font-size: 14px;
 }
@@ -198,26 +242,6 @@ body {
   margin-top: 10px;
 }
 
-table {
-  width: 100%;
-}
-
-th {
-  background: #273b47;
-  color: white;
-  padding: 10px 20px;
-  text-align: left;
-}
-
-td {
-  padding: 20px;
-}
-
-table, td, th {
-  border: 1px solid #273b47;
-  border-collapse: collapse;
-}
-
 .menu li:before {
   content: '∘';
   font-size: 40px;
@@ -228,4 +252,8 @@ table, td, th {
 .menu a {
   color: white;
   text-decoration: none;
+}
+
+.tabla {
+  margin: 50px 0;
 }
