@@ -25,6 +25,10 @@ Modelo de caja css
   margin-top: 70px;
 }
 
+.titulo span {
+  text-decoration: underline;
+}
+
 body {
   font-family: 'Allerta', sans-serif;
   margin: 0;
@@ -89,15 +93,20 @@ body {
   background-image: url('../images/background.png');
   color: white;
   padding: 20px;
+  background-size: cover;
+  height: 500px;
 }
 
 .button {
-  border-radius: 5px;
+  border-radius: 12px;
   border: none;
   background: #fd324e;
   color: white;
-  padding: 7px;
-
+  padding: 7px 12px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 18px;
+  background: linear-gradient(to left, #fe344e, #ff7250);
 }
 
 .portada button {
@@ -118,6 +127,7 @@ body {
 
 .logotipo {
   display: inline-block;
+  margin-left: 0;
 }
 
 
@@ -186,4 +196,36 @@ body {
 
 .sexo{
   margin-top: 10px;
+}
+
+table {
+  width: 100%;
+}
+
+th {
+  background: #273b47;
+  color: white;
+  padding: 10px 20px;
+  text-align: left;
+}
+
+td {
+  padding: 20px;
+}
+
+table, td, th {
+  border: 1px solid #273b47;
+  border-collapse: collapse;
+}
+
+.menu li:before {
+  content: '∘';
+  font-size: 40px;
+  line-height: 20px;
+  color: white;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
 }
